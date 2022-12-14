@@ -33,6 +33,7 @@
                     <th>#</th>
                     <th>Nama Toko</th>
                     <th>Nama Customer</th>
+                    <th>Status Customer</th>
                     <th>Barang</th>
                     <th>Jumlah</th>
                     <th>Harga Satuan</th>
@@ -49,18 +50,18 @@
                     <?php $no=1; foreach ($transaksi as $key) :?>
                         <tr>
                           <td><?= $no++ ?></td>
-                          <td><?= $key->level_cust ?></td>
+                          <td><?= $key->nama_toko ?></td>
                           <td><?= $key->nama_customer ?></td>
-                          <td><?= $key->email ?></td>
-                          <td><?= $key->kota ?></td>
-                          <td><?= $key->kode_pos ?></td>
-                          <td><?= $key->telp ?></td>
-                          <td><?= $key->telp ?></td>
-                          <td><?= $key->telp ?></td>
-                          <td><?= $key->telp ?></td>
-                          <td><?= $key->telp ?></td>
-                          <td><?= $key->telp ?></td>
-                          <td><?= nl2br($key->alamat)?></td>
+                          <td><?= $key->level_cust ?></td>
+                          <td><?= $key->nama_barang ?></td>
+                          <td><?= $key->qty ?></td>
+                          <td><?= $key->hrg_jual ?></td>
+                          <td><?= $key->subtotal ?></td>
+                          <td><?= $key->ongkir ?></td>
+                          <td><?= $key->tanggal ?></td>
+                          <td><?= $key->nama_bank ?></td>
+                          <td><?= $key->agen ?></td>
+                          <td><?= $key->status ?></td>
                           <td align="center">
                               <a class="btn btn-primary btn-md" href="<?= base_url('admin/customer/edit/'.encrypt_url($key->id_customer) ) ?>"><i class="fas fa-edit"></i></a>
                               <a class="btn btn-danger btn-md" href=""><i class="fas fa-trash"></i></a>
@@ -80,3 +81,5 @@
       </div><!-- /.container-fluid -->
     </div>
     <!-- /.content -->
+
+    

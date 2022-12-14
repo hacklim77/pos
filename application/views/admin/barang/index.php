@@ -53,11 +53,11 @@
                           <td><?= $key->kategori_barang ?></td>
                           <td><?= $key->ket_barang ?></td>
                           <td><?= $key->stok ?></td>
-                          <td><?= $key->hrg_jual ?></td>
-                          <td><?= $key->hrg_beli ?></td>
-                          <td><?= $key->hrg_normal ?></td>
-                          <td><?= $key->hrg_reseller ?></td>
-                          <td><?= $key->hrg_grosir ?></td>
+                          <td><?= "Rp ".number_format($key->hrg_jual,0,",","."),",-";?></td>
+                          <td><?= "Rp ".number_format($key->hrg_beli,0,",","."),",-";  ?></td>
+                          <td><?= "Rp ".number_format($key->hrg_normal,0,",","."),",-";?></td>
+                          <td><?= "Rp ".number_format($key->hrg_reseller,0,",","."),",-"; ?></td>
+                          <td><?= "Rp ".number_format($key->hrg_grosir,0,",","."),",-"; ?></td>
                           <td><?= $key->tanggal ?></td>
                           <td><?= $key->status ?></td>
                           <td>
